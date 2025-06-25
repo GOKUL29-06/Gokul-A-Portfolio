@@ -22,7 +22,8 @@ const About = () => {
                     </p>
 
 
-                    <a download="Gokul-A-Resume.pdf" href={CV} className="button button--flex">
+                    <a href={CV} target="_blank" rel="noopener noreferrer" className="button button--flex">
+
                         Download CV
                         <svg
                             class="button__icon"
