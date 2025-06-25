@@ -1,0 +1,126 @@
+/* Container and general styling */
+
+h2 {
+    font-weight: bold;
+    color: #343a40;
+    text-transform: uppercase; /* Make the heading more prominent */
+    letter-spacing: 2px; /* Add space between letters for better readability */
+}
+
+/* Styling for the card */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a more modern feel */
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-15px); /* Lift card on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Deeper shadow for hover effect */
+}
+
+/* Image styling */
+.card-img-top {
+    height: 250px; /* Increased image height */
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1); /* Zoom image on hover */
+    filter: brightness(0.9); /* Add a slight darken effect on hover */
+}
+
+/* Card body and text styling */
+.card-body {
+    padding: 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #343a40;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #757575;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #202020;
+    transform: translateY(-3px); /* Button lifts on hover */
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(14, 188, 147, 0.5); /* Focus state with shadow */
+}
+
+.me-2 {
+    margin-right: 5px;
+}
+
+/* Responsive grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.col-lg-4, .col-md-6, .col-sm-12 {
+    margin-bottom: 30px;
+}
+
+/* Project card styling adjustments */
+.card-body {
+    min-height: 260px; /* Ensure space for content */
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Ensure the layout is responsive */
+@media (max-width: 768px) {
+    .col-lg-4 {
+        margin-bottom: 20px;
+    }
+
+    .col-md-6 {
+        margin-bottom: 15px;
+    }
+}
