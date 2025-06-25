@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import AboutImg from '../../assets/about.jpg'
-import CV from '../../assets/Gokul-A-Resume.pdf'
+// import CV from '../../assets/Gokul-A-Resume.pdf'
 import Info from './Info'
 
 const About = () => {
@@ -22,8 +22,11 @@ const About = () => {
                     </p>
 
 
-                    <a href={CV} target="_blank" rel="noopener noreferrer" className="button button--flex">
-
+                    <a
+                        href={`${import.meta.env.BASE_URL}assets/Gokul-A-Resume.pdf`}
+                        download="Gokul-A-Resume.pdf"
+                        className="button button--flex"
+                    >
                         Download CV
                         <svg
                             class="button__icon"
