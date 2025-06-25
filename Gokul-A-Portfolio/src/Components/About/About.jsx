@@ -21,8 +21,8 @@ const About = () => {
                         I am a proficient Java Full Stack Developer with expertise in React.js, Spring Boot, Java, MySQL, and related technologies. With a strong focus on building scalable and efficient web applications, I am committed to continuous learning and adopting new technologies to drive technical excellence.
                     </p>
 
+                    <a download="Gokul-A-Resume.pdf" href="/Gokul-A-Resume.pdf" className="button button--flex">
 
-                    <a download="" href={CV} className="button button--flex">
                         Download CV
                         <svg
                             class="button__icon"
